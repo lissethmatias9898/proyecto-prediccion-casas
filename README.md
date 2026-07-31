@@ -4,6 +4,8 @@
 > **Objetivo:** Predecir el precio de venta de inmuebles en Ecuador usando Machine Learning  
 > **Fecha:** Julio 2025
 
+> **Repositorio GitHub:** https://github.com/lissethmatias9898/proyecto-prediccion-casas
+
 ---
 
 ## 🗂️ Índice
