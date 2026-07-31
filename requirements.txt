@@ -1,0 +1,32 @@
+# =============================================================================
+# requirements.txt — Dependencias del Proyecto de Predicción Inmobiliaria
+# =============================================================================
+# Instalar con: pip install -r requirements.txt
+#
+# Este archivo lista todas las librerías necesarias para ejecutar:
+#   • ejercicio_eela.py (entrenamiento y EDA)
+#   • api_v1_minima.py / api_v2_intermedia.py / api_v3_avanzada.py (APIs)
+
+# ── Manipulación de datos ────────────────────────────────────────────────────
+pandas==2.2.2          # DataFrames, lectura/escritura de CSV
+numpy==2.0.2           # Operaciones numéricas y arrays (dependencia de pandas y sklearn)
+
+# ── Visualización ────────────────────────────────────────────────────────────
+matplotlib==3.10.0     # Gráficos: boxplots, histogramas, scatter plots, heatmaps
+seaborn==0.13.2        # Gráficos estadísticos de alto nivel (sobre matplotlib)
+
+# ── Machine Learning ─────────────────────────────────────────────────────────
+scikit-learn==1.6.1    # Modelos (RandomForestRegressor, LinearRegression),
+                        # preprocesamiento (OneHotEncoder, train_test_split),
+                        # métricas (mean_squared_error, r2_score)
+joblib==1.5.3          # Serialización de modelos: guardar/cargar archivos .pkl
+
+# ── API REST ─────────────────────────────────────────────────────────────────
+fastapi==0.115.12      # Framework web para construir la API
+uvicorn==0.34.2        # Servidor ASGI para ejecutar FastAPI
+pydantic==2.10.6       # Validación de datos (dependencia de FastAPI, los BaseModel)
+python-dotenv==1.1.0   # Carga automática de variables desde archivo .env
+
+# ── Interfaz gráfica (Streamlit) ──────────────────────────────────────────────
+streamlit==1.44.1       # Framework para apps web interactivas de datos
+requests==2.32.4        # Cliente HTTP para consumir la API desde Streamlit
